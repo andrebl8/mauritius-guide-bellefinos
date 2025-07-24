@@ -38,7 +38,7 @@ const activities: Activity[] = [
   },
   {
     name: "Table du Château",
-    description: "Et anbefalt sted for lunsj: <a href='https://www.tableduchateau.com/' target='_blank' rel='noopener noreferrer' className='mauritius-link'>tableduchateau.com</a>. Et anbefalt lunsjsted med utmerket mat.",
+    description: "Et anbefalt sted for lunsj: <a href='https://www.tableduchateau.com/' target='_blank' rel='noopener noreferrer' class='mauritius-link'>tableduchateau.com</a>. Et anbefalt lunsjsted med utmerket mat.",
     emoji: "🍽️"
   },
   {
