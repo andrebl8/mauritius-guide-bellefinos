@@ -16,6 +16,30 @@ function getFoodEmoji(index: number): string {
 
 const foodItems: FoodItem[] = [
   {
+    name: "Gâteau Patate (Sweet Potato Cakes)",
+    shortDescription: "Halvmåneformede kaker laget av most søtpotet – en søt og aromatisk dessertretning.",
+    description: "Disse halvmåneformede kakene lages av most søtpotet tilsatt sukker, revet kokos og vanilje (noen ganger også kardemomme) før de friteres til gyllen perfeksjon. Resultatet er en søt og aromatisk dessertretning med en mild og tilfredsstillende smak.",
+    useHTML: false
+  },
+  {
+    name: "Gâteau Arouille (Taro Fritters)",
+    shortDescription: "Sprø frityrstekte kaker laget av revet taro – en salt godbit med litt varme fra ingefær.",
+    description: "Disse sprø kakene lages av revet taro (arouille) blandet med urter, ingefær og stivelse før fritering. Resultatet blir sprø utenpå og myk inni med litt varme fra ingefæren. De serveres ofte som en salt godbit eller snack sammen med chutney.",
+    useHTML: false
+  },
+  {
+    name: "Gâteau Bringelle (Auberginekaker)",
+    shortDescription: "Tynne skiver aubergine dyppet i kikertmelrøre og fritert til gyllen sprøhet.",
+    description: "Disse delikate kakene lages av tynne skiver aubergine som dyppes i en kikertmelrøre og friteres til de blir gylne og sprø. De serveres ofte med grønn koriander-chutney eller lokal chili-pasta (mazavarou) som gir et friskt, pikant tilskudd til smaken.",
+    useHTML: false
+  },
+  {
+    name: "Napolitaine / Gato Zinzli",
+    shortDescription: "To søte kinesisk-mauritiske bakstvarianter – perfekte som dessert eller med te.",
+    description: "Napolitaine er små sablé-kjeks med syltetøy og rosa glasur, populære i små bakerier og markeder. Gato Zinzli er søte sesamrullende kaker basert på rismel og røde bønner, med kinesiske røtter. Begge er populære søte godbiter som nytes som dessert eller med te.",
+    useHTML: false
+  },
+  {
     name: "Dhal Puri",
     shortDescription: "Dhal puri fra Mauritius er en av øyas mest elskede gatematretter – og det med god grunn.",
     description: "En myk hvetepannekake fylt med moste gule splitterter, servert med kremet karri, frisk rougaille og syrlig chutney. Smaken er en nydelig balanse mellom mildt krydret varme, myke teksturer og en subtil sødme.",
@@ -28,9 +52,9 @@ const foodItems: FoodItem[] = [
     useHTML: false
   },
   {
-    name: "Gateaux Piment",
-    shortDescription: "Disse sprø, gylne linsebollene er en elsket gatemat-snack på Mauritius – perfekte som et raskt mellommåltid.",
-    description: "Disse små, sprø bollene lages av gule splitterter (chana dal) blandet med løk, chili og urter. De friteres til de blir gylne og sprø utenpå, men forblir myke inni. Serveres ofte med chili-saus eller koriander-chutney.",
+    name: "Gâteau Piment (Chili Cakes)",
+    shortDescription: "Små, frityrstekte kuler laget av chana dal, chili, koriander, løk og kryddere – sprø utenpå og myke inni.",
+    description: "Disse små, frityrstekte kulene lages av «chana dal» (split peas), chili, koriander, løk og kryddere. De friteres til de blir gylne og sprø utenpå, men forblir myke inni. Serveres varm, ofte med brød eller i baguette sammen med smør og chili-paté. Populært som frokost, ettermiddags-snack eller med en kopp te.",
     useHTML: false
   },
   {
@@ -133,6 +157,13 @@ export function FoodSection() {
           For en autentisk opplevelse, prøv å kjøpe mat fra de lokale matbilene og spis på stranden. 
           Gatemat på Mauritius er ikke bare velsmakende, men gir deg også en smak av den lokale kulturen.
         </p>
+        <h4 className="font-semibold mt-4 mb-2 text-secondary">Hvor finner du de beste gatekakene?</h4>
+        <ul className="text-muted-foreground list-disc pl-5 space-y-2">
+          <li><strong>Port Louis Central Market</strong> - Her finner du alle de nevnte gatekakene, spesielt gateau piment, patate, arouille og diverse samossas.</li>
+          <li><strong>Chinatown, Port Louis</strong> - For Napolitaine, søte godbiter og Gato Zinzli, besøk små bakerier og asiatiske bakstboder.</li>
+          <li><strong>Quatre Bornes Market (Rose Hill-området)</strong> - En livlig lokal markedsscene med fokus på fritters og desserter. Gâteau Patate og Arouille selges ofte her.</li>
+          <li><strong>S&N Gateau Piment i Port Louis</strong> - Kjent for sine spesielt gode Gâteau Piment.</li>
+        </ul>
       </div>
     </div>
   )
