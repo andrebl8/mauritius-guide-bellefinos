@@ -261,14 +261,15 @@ export function HotelSection() {
         onValueChange={setSelectedHotelId}
         className="w-full"
       >
-        <TabsList className="w-full mb-6">
+        <TabsList className="flex flex-wrap sm:grid sm:grid-cols-2 md:grid-cols-4 w-full mb-6 gap-1 sm:gap-0 p-1">
           {hotels.map(hotel => (
             <TabsTrigger 
               key={hotel.id} 
               value={hotel.id}
-              className="flex-1"
+              className="flex-1 min-w-[45%] sm:min-w-0 mauritius-tab-trigger hotel-tab-trigger text-sm sm:text-base"
             >
-              {hotel.name} ({renderStars(hotel.stars).slice(0, 1)})
+              <span className="hotel-name">{hotel.name}</span>
+              <span className="hotel-stars">{renderStars(hotel.stars).slice(0, 1)}</span>
             </TabsTrigger>
           ))}
         </TabsList>
