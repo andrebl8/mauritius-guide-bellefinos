@@ -118,7 +118,7 @@
 
   /* Mauritius-themed card */
   .mauritius-card {
-    @apply rounded-lg border bg-card p-4 shadow-sm transition-all duration-200;
+    @apply border rounded bg-card p-4 shadow-sm transition-all duration-200;
     border-width: 2px;
     border-image: linear-gradient(
       to right, 

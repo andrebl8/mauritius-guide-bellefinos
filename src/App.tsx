@@ -2,6 +2,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { FoodSection } from "@/components/sections/FoodSection"
 import { NatureSection } from "@/components/sections/NatureSection"
 import { ActivitiesSection } from "@/components/sections/ActivitiesSection"
+import { HotelSection } from "@/components/sections/HotelSection"
+import { SeasonalSection } from "@/components/sections/SeasonalSection"
 
 export default function App() {
   return (
@@ -23,7 +25,7 @@ export default function App() {
       <main className="container mx-auto px-4 py-10">
         {/* Mauritius-themed tabs */}
         <Tabs defaultValue="food" className="w-full mauritius-tabs">
-          <TabsList className="grid w-full grid-cols-3 mb-8 bg-muted/50 p-1.5 rounded-lg">
+          <TabsList className="grid w-full grid-cols-5 mb-8 bg-muted/50 p-1.5 rounded-lg">
             <TabsTrigger value="food" className="mauritius-tab-trigger">
               🍽️ Mat
             </TabsTrigger>
@@ -32,6 +34,12 @@ export default function App() {
             </TabsTrigger>
             <TabsTrigger value="activities" className="mauritius-tab-trigger">
               🏄‍♂️ Aktiviteter
+            </TabsTrigger>
+            <TabsTrigger value="hotel" className="mauritius-tab-trigger">
+              🏨 Hotell
+            </TabsTrigger>
+            <TabsTrigger value="seasonal" className="mauritius-tab-trigger">
+              🗓️ Reisetid
             </TabsTrigger>
           </TabsList>
 
@@ -45,6 +53,14 @@ export default function App() {
 
           <TabsContent value="activities">
             <ActivitiesSection />
+          </TabsContent>
+
+          <TabsContent value="hotel">
+            <HotelSection />
+          </TabsContent>
+
+          <TabsContent value="seasonal">
+            <SeasonalSection />
           </TabsContent>
         </Tabs>
       </main>

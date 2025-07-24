@@ -105,11 +105,11 @@ export function FoodSection() {
         {foodItems.map((item, index) => (
           <div 
             key={item.name} 
-            className="mauritius-card hover:shadow-md hover:-translate-y-1"
+            className="mauritius-card hover:shadow-md hover:-translate-y-1 rounded"
             style={{ alignSelf: "start" }}
           >
             {item.shortDescription ? (
-              <Accordion type="single" collapsible className="border-none">
+              <Accordion type="single" collapsible>
                 <AccordionItem value={item.name} className="border-none">
                   <AccordionTrigger className="p-0 hover:no-underline">
                     <div>
