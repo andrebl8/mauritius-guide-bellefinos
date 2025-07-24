@@ -6,7 +6,7 @@ interface FoodItem {
 
 // Helper function to get food emojis
 function getFoodEmoji(index: number): string {
-  const emojis = ["🍛", "🥘", "🍲", "🍚", "🍜", "🥗", "🍱", "🥜"];
+  const emojis = ["🫓", "🥘", "🍲", "🍚", "🍜", "🥗", "🍱", "🥜"];
   return emojis[index % emojis.length];
 }
 

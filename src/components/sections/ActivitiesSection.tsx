@@ -8,7 +8,7 @@ interface Activity {
 const activities: Activity[] = [
   {
     name: "Katamarantur",
-    description: "Katamaran med matservering innafor revet. Nyt en katamarantur med matservering inne i revet. Besøk: <a href='https://www.ileauxcerfsleisureisland.com/' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>ileauxcerfsleisureisland.com</a>",
+    description: "Katamaran med matservering innafor revet. Nyt en katamarantur med matservering inne i revet. Besøk: <a href='https://www.ileauxcerfsleisureisland.com/' target='_blank' rel='noopener noreferrer' class='mauritius-link'>ileauxcerfsleisureisland.com</a>",
     emoji: "⛵"
   },
   {
@@ -38,7 +38,7 @@ const activities: Activity[] = [
   },
   {
     name: "Table du Château",
-    description: "Et anbefalt sted for lunsj: <a href='https://www.tableduchateau.com/' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>tableduchateau.com</a>. Et anbefalt lunsjsted med utmerket mat.",
+    description: "Et anbefalt sted for lunsj: <a href='https://www.tableduchateau.com/' target='_blank' rel='noopener noreferrer' className='mauritius-link'>tableduchateau.com</a>. Et anbefalt lunsjsted med utmerket mat.",
     emoji: "🍽️"
   },
   {
@@ -68,7 +68,15 @@ export function ActivitiesSection() {
             <h3 className="font-semibold text-lg flex items-center">
               {activity.emoji} <span className="ml-2">{activity.name}</span>
             </h3>
-            <p className="text-sm text-muted-foreground mt-2">{activity.description}</p>
+            {/* 
+              Using dangerouslySetInnerHTML to render HTML links in the description.
+              This is safe in this context because the content is hardcoded in the source,
+              but would be a security risk if the content came from user input or an untrusted API.
+            */}
+            <p 
+              className="text-sm text-muted-foreground mt-2"
+              dangerouslySetInnerHTML={{ __html: activity.description }}
+            ></p>
           </div>
         ))}
       </div>
@@ -78,7 +86,7 @@ export function ActivitiesSection() {
         <h3 className="font-semibold mb-2 text-lg text-border">Reisetips</h3>
         <p className="text-muted-foreground">
           Ikke bare bli på resortet ditt - utforsk øya! For hjelp med å bestille aktiviteter, 
-          kan du kontakte lokale turoperatører som Horizon Holidays: <a href="https://m.facebook.com/horizonholidays/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://m.facebook.com/horizonholidays/</a>
+          kan du kontakte lokale turoperatører som Horizon Holidays: <a href="https://www.facebook.com/horizonholidays/" target="_blank" rel="noopener noreferrer" className="mauritius-link">horizonholidays - facebook</a>
         </p>
       </div>
     </div>
