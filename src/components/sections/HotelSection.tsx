@@ -242,8 +242,6 @@ const hotels: Hotel[] = [
 export function HotelSection() {
   const [selectedHotelId, setSelectedHotelId] = useState<string>(hotels[0].id);
 
-  const selectedHotel = hotels.find(hotel => hotel.id === selectedHotelId) || hotels[0];
-
   // Function to render star rating
   const renderStars = (count: number) => {
     return Array(count).fill("⭐").join("");
