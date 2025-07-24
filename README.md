@@ -44,7 +44,7 @@ Dette vil generere optimaliserte filer i `dist`-mappen.
 
 ### Automatisk deployment med GitHub Actions
 
-Dette prosjektet er konfigurert med GitHub Actions for automatisk deployment til GitHub Pages. Hver gang du pusher til `main`-branchen, vil GitHub Actions:
+Dette prosjektet er konfigurert med GitHub Actions for automatisk deployment til GitHub Pages. Hver gang du pusher til `master`-branchen, vil GitHub Actions:
 
 1. Bygge prosjektet
 2. Deploye det til GitHub Pages
